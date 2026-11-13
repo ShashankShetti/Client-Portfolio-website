@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Avoid a white flash on overscroll / before the app paints */
+body {
+  background-color: #0a0908;
+}
+
+/* ---------------------------------------------------------------------------
+   Custom design classes used by the page (moved here from the inline <style>
+   block of the original single-file component). Fonts are loaded in index.html.
+   --------------------------------------------------------------------------- */
+.font-cinema-title {
+  font-family: 'Cinzel', 'Cormorant Garamond', Georgia, serif;
+}
+.font-cinema-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+.font-kannada {
+  font-family: 'Noto Serif Kannada', serif;
+}
+.font-timecode {
+  font-family: 'JetBrains Mono', monospace;
+}
+.film-grain {
+  background-image: radial-gradient(rgba(212, 175, 55, 0.06) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+.gold-shimmer {
+  background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 45%, #AA7C11 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.anamorphic-frame {
+  aspect-ratio: 2.35 / 1;
+}
